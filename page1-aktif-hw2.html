@@ -18,6 +18,10 @@
           var liElement = document.createElement("li");
           liElement.innerText = prod.name + "-" + prod.unitPrice;
           document.querySelector("ul").appendChild(liElement);
+          if (prod.unitPrice > 50) {
+            liElement.style.color = "red";
+          }
+          
         });
       });
     }
